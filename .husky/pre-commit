@@ -1,1 +1,1 @@
-cd code-guard && npm run lint-staged
+cd packages/code-guard && npm run lint-staged
