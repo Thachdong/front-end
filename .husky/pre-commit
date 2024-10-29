@@ -1,1 +1,1 @@
-npm test
+cd code-guard && npm run lint-staged
