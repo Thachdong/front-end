@@ -1,1 +1,1 @@
-cd code-guard && npm run lint-staged
+npm run precommit
