@@ -10,14 +10,16 @@ try {
 
   // Check if files from each package are staged
   const codeGuardFiles = stagedFiles.filter((file) =>
-    file.startsWith("code-guard/")
+    file.startsWith("packages/code-guard/")
   );
   const reactWebpackFiles = stagedFiles.filter((file) =>
-    file.startsWith("react-webpack/")
+    file.startsWith("packages/react-webpack/")
   );
 
   const isCodeGuardChange = !!codeGuardFiles.length;
   const isReactWebpackChange = !!reactWebpackFiles.length;
+
+  console.log("file change", codeGuardFiles, reactWebpackFiles, stagedFiles)
 
   if (isCodeGuardChange && isReactWebpackChange) {
     console.error(
